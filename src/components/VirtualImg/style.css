@@ -1,0 +1,22 @@
+.right{
+    position: relative;
+}
+  .girl-v-vr {
+    width: 420px;
+    height: 490px;
+  }
+  .elipse-right {
+    position: absolute;
+   
+    max-width: 669px;
+   
+    filter: blur(75px);
+    top: 60px;
+    right: -100px;
+    background: radial-gradient(
+      37.26% 37.26% at 50% 50%,
+      rgba(170, 20, 240, 0.31) 0%,
+      rgba(170, 20, 240, 0) 100%
+    );
+    
+  }

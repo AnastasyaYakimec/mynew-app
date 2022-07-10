@@ -1,0 +1,24 @@
+.btn-box {
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(
+      99.99deg,
+      #b936f5 -21.45%,
+      #c64c85 100%,
+      #f1005b 100%
+    );
+    border-radius: 2px;
+    margin-left: 5px;
+    padding: 5px 15px;
+    color: white;
+    border: hidden;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in;
+  }
+  
+  .btn-box:hover {
+    background: rgb(237, 195, 236);
+  }
+  .nav-list_item{
+list-style-type: none;
+  }

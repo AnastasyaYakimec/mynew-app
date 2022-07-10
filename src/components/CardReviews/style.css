@@ -1,0 +1,45 @@
+.cart-reviews {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+    text-align: center;
+    background-image: url(../../assets/img/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 768px;
+    position: relative;
+  }
+
+  .reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+
+  .title-reviews {
+    padding: 15px;
+    font-size: 19px;
+    font-family: "Orbitron";
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .text-reviews {
+    font-size: 9px;
+    max-width: 328px;
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .list-cart-user {
+    display: flex;
+    justify-content: center;
+    padding: 0 70px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+   
+  
+  }

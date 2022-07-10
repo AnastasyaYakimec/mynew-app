@@ -1,0 +1,24 @@
+ .pagination_number {
+  display: flex;
+  flex-wrap: wrap;
+  
+  max-width: 854px;
+  position: relative; 
+  
+} 
+
+
+.list-variant{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.card{
+    width: 100%;
+   
+    
+}
+.ellipse2-1{
+position: absolute;
+}

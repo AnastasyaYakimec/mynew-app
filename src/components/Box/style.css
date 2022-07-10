@@ -1,0 +1,24 @@
+.box1 {
+  margin-top: 30px;
+  width: 100%;
+    display: flex;
+    background-image: url(../../assets/img/vector.svg);
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding:0 40px;
+    
+  }
+  .box1-subtaitle {
+    width: 40%;
+    font-family: "Orbitron";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    margin-top: 7px;
+   
+  }
+  
+  .foto-button {
+    border-radius: 6.56072px 19.6822px 6.56072px 6.56072px;
+  }

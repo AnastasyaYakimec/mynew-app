@@ -1,0 +1,36 @@
+.cart-user-1
+{
+  background-image: url(../../assets/img/background.svg);
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 5px;
+  line-height: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+  box-sizing: border-box;
+}
+.cart-title {
+    color: yellow;
+  }
+  .cart-p {
+    margin: 15px 0;
+    line-height: 7px;
+    max-width: 90%;
+  }
+  .user-info {
+    display: flex;
+  }
+  .cart-footer-div {
+    margin-left: 10px;
+    padding-top: 5px;
+  }
+  .cart-footer-span {
+    display: block;
+  }
+  .cart-footer-span-email {
+    color: rgb(208, 49, 75);
+  }
