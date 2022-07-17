@@ -1,4 +1,4 @@
-.cart-user-1
+.card-user
 {
   background-image: url(../../assets/img/background.svg);
   border-radius: 10px;
@@ -13,10 +13,10 @@
   width: 70%;
   box-sizing: border-box;
 }
-.cart-title {
+.card-title {
     color: yellow;
   }
-  .cart-p {
+  .card-desc {
     margin: 15px 0;
     line-height: 7px;
     max-width: 90%;
@@ -24,13 +24,13 @@
   .user-info {
     display: flex;
   }
-  .cart-footer-div {
+  .card-footer-div {
     margin-left: 10px;
     padding-top: 5px;
   }
-  .cart-footer-span {
+  .card-footer-span {
     display: block;
   }
-  .cart-footer-span-email {
+  .card-footer-span-email {
     color: rgb(208, 49, 75);
   }

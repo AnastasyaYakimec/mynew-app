@@ -1,20 +1,16 @@
 import React from "react";
-import { Card } from "../Card/Card";
+import { review } from "../../mock";
+import { Card } from "../Card/Card.jsx";
 import { Pagination } from "../Pagination/Pagination";
-import "./style.css";
 import elipse2 from '../../assets/img/ellipse2.svg'
+import "./style.css";
+
 
 export const Cards = () => {
   return (
-    <div class="card">
-      <ul id="list-shop-variant" class="list-variant">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+    <div class="cards">
+      <ul class="list-variant">
+        {review.map((rewiew)=><Card key={rewiew.id} rewiew={rewiew}/>) }
       </ul>
       <Pagination />
 

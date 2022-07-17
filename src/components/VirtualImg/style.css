@@ -1,4 +1,4 @@
-.right{
+.virtualimg{
     position: relative;
 }
   .girl-v-vr {
@@ -7,9 +7,7 @@
   }
   .elipse-right {
     position: absolute;
-   
     max-width: 669px;
-   
     filter: blur(75px);
     top: 60px;
     right: -100px;

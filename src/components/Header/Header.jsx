@@ -1,12 +1,13 @@
 import React from 'react';
-import './style.css'
-import headerellipse from "../../assets/icon/headerellipse.svg"
+import headerEllipse from "../../assets/icon/headerEllipse.svg"
 import { Button } from '../Button/Button';
+import './style.css'
+
 export const Header = () => {
   return (
     <div className='header-container'>
-       <img className='headerellipse' src={headerellipse} alt=""></img>
-      <div id="notLoginHeader" className="header">
+       <img className='headerellipse' src={headerEllipse} alt=""></img>
+      <div className="header">
         <a href="index.html" className="header_logo">
           Light
         </a>

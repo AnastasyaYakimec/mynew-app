@@ -1,17 +1,17 @@
-.left {
+.explorer {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
    
   }
-  .title-subtitle {
+  .explorer-header {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .title {
+  .explorer-header_title {
     width: 100%;
     max-width: 333px;
     max-height: 130px;
@@ -24,7 +24,7 @@
     margin-bottom: 20px;
     color: white;
   }
-  .subtitle {
+  .explorer-header_subtitle {
     max-width: 314px;
     left: 58px;
     font-family: "Inter";

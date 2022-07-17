@@ -1,14 +1,15 @@
 import React from 'react';
-import './style.css'
 import avatar from '../../assets/icon/avatar.svg'
 import whiteDote from "../../assets/icon/white dote.svg"
+import './style.css'
+
  export const Explorer = () => {
     return (
         <div>
-            <div className="left">
-            <div className="title-subtitle">
-              <h1 className="title"> Let’s Explore  Three-Dimensional visual</h1>
-              <p className="subtitle">
+            <div className="explorer">
+            <div className="explorer-header">
+              <h1 className="explorer-header_title"> Let’s Explore  Three-Dimensional visual</h1>
+              <p className="explorer-header_subtitle">
                 With virtual technology you can see the digital world feel more real
                 and you can play the game with a new style.
               </p>

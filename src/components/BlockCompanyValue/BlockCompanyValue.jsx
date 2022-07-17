@@ -1,5 +1,4 @@
-import React from "react";
-import "./style.css";
+
 import elipse2 from '../../assets/img/ellipse2.svg'
 import elipse3 from '../../assets/img/ellipse3.svg'
 import embleme from '../../assets/img/emblem.svg'
@@ -7,7 +6,11 @@ import icon1 from '../../assets/icon/icon/icon1.svg'
 import icon2 from '../../assets/icon/icon/icon2.svg'
 import icon3 from '../../assets/icon/icon/icon3.svg'
 import icon4 from '../../assets/icon/icon/icon4.svg'
-export const BlockCompanyVlue = () => {
+import React from "react";
+import "./style.css";
+
+
+export const BlockCompanyValue = () => {
   return (
     <div>
       <div className="block-company-values">

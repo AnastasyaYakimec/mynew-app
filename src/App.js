@@ -1,31 +1,34 @@
+
 import { Header } from "./components/Header/Header.jsx";
-import "./App.css";
-import "./assets/reset.css";
 import { Explorer } from "./components/Explorer/Explorer.jsx";
 import { VirtualImg } from "./components/VirtualImg/VirtualImg.jsx";
-import { BoxTryGame } from "./components/  BoxTryGame/  BoxTryGame.jsx";
-import { Box } from "./components/Box/Box.jsx";
-import { Box2 } from "./components/Box2/Box2.jsx";
+import { TryGame } from "./components/TryGame/TryGame.jsx";
+import { ImgButton } from "./components/ImgButton/ImgButton.jsx";
+import { HeaderCards } from "./components/HeaderCards/HeaderCards.jsx";
 import { Cards } from "./components/Cards/Cards.jsx";
 import { CardReviews } from "./components/CardReviews/CardReviews.jsx";
-import { BlockCompanyVlue } from "./components/BlockCompanyValue/BlockCompanyVlue.jsx";
-import {Footer} from "./components/Footer/Footer.jsx"
+import { BlockCompanyValue } from "./components/BlockCompanyValue/BlockCompanyValue.jsx";
+import { Footer } from "./components/Footer/Footer.jsx";
+import "./App.css";
+import "./assets/reset.css";
+
+
 export const App = () => {
   return (
-    <div className="bcgg">
+    <div className="container">
       <Header />
-      <div className="centr">
+      <div className="hero">
         <Explorer />
         <VirtualImg />
       </div>
-      <BoxTryGame />
-      <Box />
-      <Box2 />
+      <TryGame />
+      <ImgButton />
+      <HeaderCards />
       <Cards />
       <CardReviews />
-      <BlockCompanyVlue />
-   <Footer/>
+      <BlockCompanyValue />
+      <Footer />
     </div>
   );
 };
-export default App;
+

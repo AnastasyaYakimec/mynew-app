@@ -1,4 +1,4 @@
-.box1 {
+.imgButton {
   margin-top: 30px;
   width: 100%;
     display: flex;
@@ -9,7 +9,7 @@
     padding:0 40px;
     
   }
-  .box1-subtaitle {
+  .imgButton-subtaitle{
     width: 40%;
     font-family: "Orbitron";
     font-weight: 600;
