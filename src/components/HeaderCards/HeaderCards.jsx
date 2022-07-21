@@ -9,7 +9,7 @@ export const HeaderCards = () => {
           <div className="border-vector-text">
           
             <select >
-              <option value="sortNew" selected>New First</option>
+              <option  value="sortNew" >New First</option>
               <option value="sortOld">Old First</option>
             </select >
           </div>

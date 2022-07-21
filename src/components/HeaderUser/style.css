@@ -1,0 +1,92 @@
+
+.header-user{
+ border : 2px solid white; 
+ display: none;
+}
+/* .header{
+
+} */
+
+.header-avatar {
+    background-color: black;
+    max-width: 854px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    margin-bottom: 200px;
+  
+    left: 26%;
+
+  }
+  
+  .header-wrap-avatar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-bottom: 10px;
+    width: 600px;
+    display: none;
+  }
+  
+  .container-avatar {
+     max-width: 770px; 
+     padding: 0 65px; 
+    padding-left: 5px;
+  }
+  
+  /* .header-ellipse-avatar {
+    position: absolute;
+    left: -30px;
+    width: 100%;
+    max-width: 572px;
+    z-index: -1;
+  } */
+  
+  .header_logo-avatar {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 32px;
+    font-family: "IM FELL Great Primer SC ";
+  }
+  
+  .header_nav-avatar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .nav-list-avatar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list_item-avatar:not(:last-child) {
+    margin-right: 34px;
+  }
+  
+  .nav-list_link-avatar {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    color: white;
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+  }
+  
+  .nav-list_link-avatar:hover {
+    font-weight: 500;
+    color: #df308d;
+  }
+  
+  .nav-list_link-avatar:hover::after {
+    content: "";
+    background-color: white;
+    height: 3px;
+    width: 10px;
+    position: absolute;
+    margin-top: 20px;
+  }

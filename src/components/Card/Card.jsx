@@ -1,32 +1,45 @@
 import React from "react";
-import database from "../../assets/database/1.webp";
-import './style.css'
+import "./style.css";
 
-
-export const Card = ( props ) => {
-  const {rewiew} = props
-  
-  console.log(database
-    )
+export const Card = ({ card , onClick}) => {
   return (
-    <li className="card">
-   <img className="background-image" src={database} alt="" ></img>
-   <p>id="{rewiew.id}"</p> 
-   <div className="card-info" >
-                  <h4 className="card-subtaitle">{rewiew.cardName}</h4>
-    <p className="card-text">{rewiew.cardText} </p>
-                </div>
-              </li>
-             
+    <li className ="card" onClick={onClick}>
+    <img className ="background-image" src={`./database/${card.cardImg}`} alt=""></img>
+    <div className ="card-info">
+      <p>id="{card.id}"</p>
+      <h4 className ="card-subtaitle">{card.cardName}</h4>
+      <p className ="card-text">{card.cardText} </p>
+    </div>
+    </li>
   );
 };
 
-// {/* <li>
-  
-//   <img src={database} alt=''/>
-//   <p></p>
-//   <p>{rewiew.cardName}</p>
-//   <p>{rewiew.cardText}</p>
-//   <p>{rewiew.id}</p>
-// </li> */}
-               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// export const Card = ({ rewiew , onClick}) => {
+
+//   return (
+//     <li  className="card" onClick={onClick}>
+//       <img className="background-image" src={ database } alt=""></img>
+//       <div className="card-info">
+//         <p>id="{rewiew.id}"</p>
+//         <h4 className="card-subtaitle">{rewiew.cardName}</h4>
+//         <p className="card-text">{rewiew.cardText} </p>
+//       </div>
+//     </li>
+//   );
+// };
+
