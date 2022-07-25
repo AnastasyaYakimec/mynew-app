@@ -15,7 +15,7 @@
     top: 30px;
     left: 800px;
     cursor: pointer;
-    display: none;
+    /* display: none; */
   }
   
   .header-registered {

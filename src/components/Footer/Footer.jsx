@@ -18,7 +18,7 @@ export const Footer = () => {
           <div className="input-btn">
             <input className="input-footer" type="email" name="Youremail" placeholder="Your Email"/>
             <button className="btn-footer">Start
-            <img class="vector" src={vector}alt=""/>
+            <img className='vector' src={vector}alt=""/>
             </button>
           </div>
         </div>

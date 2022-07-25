@@ -7,15 +7,15 @@ import "./style.css";
 
 export const Cards = ({ rewiew, onClick }) => {
   return (
-    <div class="cards">
-      <ul class="list-variant">
+    <div className="cards">
+      <ul className="list-variant">
         {review.map((rewiew) => (
           <Card key={rewiew.id} card={rewiew} onClick={onClick} />
         ))}
       </ul>
       <Pagination />
 
-      <img class="ellipse2-1" src={elipse2} alt="b-gradient" />
+      <img className="ellipse2-1"src={elipse2} alt="b-gradient" />
     </div>
   );
 };

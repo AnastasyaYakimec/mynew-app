@@ -1,12 +1,12 @@
 import React from "react";
-import {HeaderUser} from "../HeaderUser/HeaderUser.jsx";
+// import { HeaderUser } from "../HeaderUser/HeaderUser.jsx";
 import "./style.css";
 
-export const Dialog = ({ open, onSubmit, onClose}) => {
+export const Dialog = ({ open, onSubmit, onClose, isLogin }) => {
   
-const OpenHeaderUser =  () => {
-console.log('OpenHeaderUser')
-}
+
+
+  // const openHeaderUser = () => {};
   return (
     <div className="sign-in">
       <div className={`modal ${open ? "modalOpen" : ""}`}>
@@ -24,15 +24,16 @@ console.log('OpenHeaderUser')
             name="password"
             placeholder="Password"
           />
-          <button className="btn" onClick={OpenHeaderUser}>Sign in</button>
-          
+          <button className="btn" onClick={isLogin}>
+            Sign in
+          </button>
+
           <button className="close" onClick={onClose}>
             &times;
           </button>
         </form>
       </div>
-      <HeaderUser />
+      {/* <HeaderUser /> */}
     </div>
   );
 };
-
