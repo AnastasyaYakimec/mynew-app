@@ -1,18 +1,17 @@
 .pagination {
-    display: flex;
-    justify-content: center;
-    margin: 15px 0;
-  }
-  .pagination_btn {
-    color: white;
-    font-size: 22px;
-    text-decoration: none;
-  }
-  .pagination_number {
-    display: flex;
-  }
-  .pagination_btn {
-    color: white;
-    font-size: 22px;
-    text-decoration: none;
-  }
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+.pagination_btn {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 10px 20px;
+
+  background-color: palevioletred;
+  margin-left: 5px;
+}
+.pagination_number {
+  display: flex;
+}

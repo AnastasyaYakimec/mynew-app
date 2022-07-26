@@ -1,116 +1,115 @@
 .explorer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-  }
-  .explorer-header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-position: relative;
-z-index: 20;
-  }
-  .explorer-header_title {
-    width: 100%;
-    max-width: 333px;
-    max-height: 130px;
-    font-family: "Orbitron";
-    font-style: normal;
-    font-weight: 900;
-    font-size: 31px;
-    line-height: 43px;
-    padding-bottom: 25px;
-    margin-bottom: 20px;
-    color: white;
-  }
-  .explorer-header_subtitle {
-    max-width: 314px;
-    left: 58px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    padding-bottom: 30px;
-    color: white;
-  }
-
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.explorer-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 40px;
+  margin-right: 60px;
+  z-index: 20;
+}
+.explorer-header_title {
+  width: 100%;
+  max-width: 333px;
+  max-height: 130px;
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 31px;
+  line-height: 43px;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+  color: white;
+}
+.explorer-header_subtitle {
+  max-width: 314px;
+  left: 58px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  padding-bottom: 30px;
+  margin-top: -20px;
+  color: white;
+}
 
 .inform {
-    display: flex;
-    flex-direction: column;
-  }
-  .text {
-    display: flex;
-    align-items: center;
-  }
-  .btn-main {
-    display: flex;
-    justify-content: space-around;
-    background: linear-gradient(
-      99.99deg,
-      #b936f5 -21.45%,
-      #c64c85 100%,
-      #f1005b 100%
-    );
-    border-radius: 2px;
-    margin-left: 5px;
-    padding: 5px 15px;
-    color: white;
-    border: hidden;
-    cursor: pointer;
-    transition: background-color 0.5s ease-in;
-    z-index: 4;
-  }
-  .btn-main:hover {
-    background: rgb(237, 195, 236);
-  }
-  .link {
-    text-decoration: none;
-    color: white;
-    font-size: 10px;
-    margin-left: 40px;
-  }
-  .people {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 20px;
-    margin-left: 5px;
-  }
-  .avatar {
-    width: 114px;
-    height: 32px;
-    margin-left: -20px;
-    
-  }
-  .white-dote {
-    width: 8px;
-    height: 8px;
-  }
-  .subtitle-online {
-    font-size: 10px;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+ 
 
-  }
 
-  .ellipse-left {
-    position: absolute;
-    width: 100%;
-    filter: blur(75px);   
-    max-width: 354px;
-    height: 500px;
-    z-index: -10;
-   background: radial-gradient(
+}
+.text {
+  display: flex;
+  align-items: center;
+}
+.btn-main {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(
+    99.99deg,
+    #b936f5 -21.45%,
+    #c64c85 100%,
+    #f1005b 100%
+  );
+  border-radius: 2px;
+  margin-left: 5px;
+  padding: 5px 15px;
+  color: white;
+  border: hidden;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in;
+  z-index: 4;
+}
+.btn-main:hover {
+  background: rgb(237, 195, 236);
+}
+.link {
+  text-decoration: none;
+  color: white;
+  font-size: 10px;
+  margin-left: 40px;
+}
+.people {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.avatar {
+  width: 114px;
+  height: 32px;
+  margin-left: -20px;
+}
+.white-dote {
+  width: 8px;
+  height: 8px;
+}
+.subtitle-online {
+  font-size: 10px;
+  color: white;
+}
+
+.ellipse-left {
+  position: absolute;
+  width: 100%;
+  filter: blur(75px);
+  max-width: 354px;
+  height: 500px;
+  z-index: 1;
+  background: radial-gradient(
     37.26% 37.26% at 50% 50%,
     rgba(170, 20, 240, 0.31) 0%,
-    rgba(170, 20, 240, 0) 100%,
-
+    rgba(170, 20, 240, 0) 100%
   );
-  
-  }
-  
-  
+}

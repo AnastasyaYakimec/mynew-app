@@ -1,15 +1,24 @@
-import React , { useState } from "react";
+import React, { useState } from "react";
 import smallavatar from "../../assets/img/smallavatar.svg";
 import { UserMenu } from "../UserMenu/UserMenu.jsx";
 import "./style.css";
 
+export const HeaderUser = (onClick) => {
 
-export const HeaderUser = () => {
-  const [stateAvatar, setstateAvatar] = useState(false);
+  
+  const [stateAvatar, setstateAvatar] = useState( );
   const clickAvatar = () => {
-    setstateAvatar(!stateAvatar);
+    setstateAvatar(true);
   };
-  const menuUser = stateAvatar ? <UserMenu clickAvatar={clickAvatar} /> : false;
+
+  const closeAvatar = () => {
+    setstateAvatar(false);
+  };
+  const menuUser = stateAvatar ? (
+    <UserMenu closeAvatar={closeAvatar} onClick={onClick} />
+  ) : (
+    false
+  );
 
   return (
     <div className="header-user">

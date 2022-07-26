@@ -1,20 +1,27 @@
 import React, { useState } from "react";
 import headerEllipse from "../../assets/icon/headerEllipse.svg";
-// import {Button} from "../Button/Button.jsx";
 import { Dialog } from "../Dialog/Dialog.jsx";
 import { HeaderUser } from "../HeaderUser/HeaderUser.jsx";
 import "./style.css";
 
-export const Header = () => {
-  const [isDialogVisible, setIsDialogVisible] = useState(false);
+export const Header = (onClick) => {
+  const storedEmail = JSON.parse(localStorage.getItem("userEmail"));
+  const storedPassword = JSON.parse(localStorage.getItem("userPassword"));
 
-  
-  const [isAuth , setIsAuth] = useState();
+  const user = {
+    email: "user@user.com",
+    password: 'qwerty',
+  };
+  const [isDialogVisible, setIsDialogVisible] = useState(
+    
+  );
 
-  const isLogin = ()=>{
-    setIsAuth( !isAuth )
- 
-  }
+  const [isAuth, setIsAuth] = useState((user.email === storedEmail && user.password === storedPassword));
+
+  const isLogin = () => {
+    setIsAuth(true)
+    
+  };
 
   const handleOpenDialog = () => {
     setIsDialogVisible(true);
@@ -31,9 +38,7 @@ export const Header = () => {
   return (
     <div className="header-container">
       <img className="headerellipse" src={headerEllipse} alt=""></img>
-      {isAuth ? (
-        <HeaderUser />
-      ) : (
+      {isAuth ? ( <HeaderUser onClick={onClick} /> ) : (
         <div className="header">
           <a href="index.html" className="header_logo">
             Light
@@ -59,9 +64,8 @@ export const Header = () => {
                 <button className="btn-box" onClick={handleOpenDialog}>
                   Sign in
                 </button>
-                {/* <Button /> */}
-                {isDialogVisible && (
-                  <Dialog
+
+                {isDialogVisible && ( <Dialog
                     open={isDialogVisible}
                     onSubmit={handleSubmitSignInDialog}
                     onClose={handleCloseDialog}

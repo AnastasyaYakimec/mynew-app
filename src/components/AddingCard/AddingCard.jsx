@@ -2,25 +2,45 @@ import React, { useState } from "react";
 import Group34 from "../../assets/img/Group34.svg";
 import "./style.css";
 
-export const AddingCard = () => {
-  const [cardImageNumber, setCardImageNumber] = useState();
-  const [inputCardImgName, setInputCardImgName] = useState();
-  const [inputCardText, setInputCardText] = useState();
-  const [Card, setCard] = useState([]);
-  const  addNewData= (e)=> {
+export const AddingCard = ({ onClick, closeAddCards }) => {
+  const [cardImageNumber, setCardImageNumber] = useState("");
+  const [inputCardImgName, setInputCardImgName] = useState("");
+  const [inputCardText, setInputCardText] = useState("");
+  
+
+  const handlerCardImageNumber = (e) => {
+    setCardImageNumber(e.target.value);
+  };
+  const handsInputCardImgName = (e) => {
+    setInputCardImgName(e.target.value);
+  };
+  const handlerInputCardText = (e) => {
+    setInputCardText(e.target.value);
+  };
+
+  const clearInput = () => {
+    setCardImageNumber("");
+    setInputCardImgName("");
+    setInputCardText("");
+  };
+  const card = JSON.parse(localStorage.getItem("cards") || "[]");
+
+  const addNewData = (e) => {
     e.preventDefault();
-   const userCard = {
-      cardImg: cardImageNumber,
+    const userCard = {
+      id: card.length,
+      cardImg: `${cardImageNumber}.webp`,
       cardName: inputCardImgName,
       cardText: inputCardText,
       cardDataTime: Date.now(),
     };
-    setCard([...Card , userCard])
-    console.log(Card)
-    setCardImageNumber('')
-    setInputCardImgName('')
-    setInputCardText('')
-  }
+    card.push(userCard);
+    localStorage.setItem("cards", JSON.stringify(card));
+
+    console.log(card);
+    clearInput();
+    closeAddCards(e)
+  };
 
   return (
     <div className="adding-card">
@@ -31,30 +51,35 @@ export const AddingCard = () => {
           className="adding-card-form_input"
           type="text"
           value={cardImageNumber}
-          onChange={(e) => setCardImageNumber( e.target.value )}
           placeholder=" Card image number"
+          onChange={handlerCardImageNumber}
         />
         <input
           className="adding-card-form_input"
           type="text"
           value={inputCardImgName}
-          onChange={(e) =>
-            setInputCardImgName( e.target.value)
-          }
           placeholder="Card name"
+          onChange={handsInputCardImgName}
         />
 
         <input
           className="adding-card-form_input"
           type="text"
           value={inputCardText}
-          onChange={(e) =>
-            setInputCardText(e.target.value )
-          }
           placeholder="Card description"
+          onChange={handlerInputCardText}
         />
-        <button onClick={addNewData} className="btn">
+        <button
+          type="submit"
+          className="btn"
+          // onClick={(e) => onClick(e,{ cardImageNumber, inputCardImgName, inputCardText })
+          // }
+          onClick={addNewData }
+        >
           Add
+        </button>
+        <button className="close" onClick={closeAddCards}>
+          &times;
         </button>
       </form>
     </div>

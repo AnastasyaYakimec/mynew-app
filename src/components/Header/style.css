@@ -1,3 +1,24 @@
+.btn-box{
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(
+    99.99deg,
+    #b936f5 -21.45%,
+    #c64c85 100%,
+    #f1005b 100%
+  );
+  border-radius: 2px;
+  margin-left: 5px;
+  padding: 5px 15px;
+  color: white;
+  border: hidden;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in;
+}
+.btn-box:hover {
+  background: rgb(237, 195, 236);
+}
+
 .header-container{
   position: relative;
 }
@@ -14,7 +35,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* z-index: 2; */
   }
   .nav-list_link {
     text-decoration: none;
@@ -51,13 +71,13 @@
    z-index:10 ;
   }
   .header {
-    background-color: black;
+    background-color: rgba(8, 8, 8);
     display: flex;
     justify-content: space-between;
     padding: 15px 15px;
     box-sizing: border-box;
    position: relative; 
-   z-index: 100;
+  
   }
   .nav-list_item:not(:last-child) {
     margin-right: 34px;

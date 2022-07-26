@@ -1,5 +1,6 @@
 .user-menu-registered {
     box-sizing: border-box;
+    margin-top: 80px;
     margin: 0 auto;
     padding: 0 15px;
     border-radius: 5px;
@@ -12,10 +13,10 @@
     font-style: regular;
     margin-top: 20px;
     position: absolute;
-    top: 30px;
+    /* top: 30px; */
     left: 800px;
     cursor: pointer;
-    /* display: none; */
+ 
   }
   
   .header-registered {
@@ -42,6 +43,11 @@
   }
   
   .menu-item-registered {
+
     padding-bottom: 15px;
     cursor: pointer;
+    width: 100%;
+   
+    z-index: 1;
+
   }

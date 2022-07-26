@@ -1,6 +1,7 @@
 import React from 'react';
 import avatar from '../../assets/icon/avatar.svg'
 import whiteDote from "../../assets/icon/white dote.svg"
+import ellipseLeft from '../../assets/icon/ellipse-left.svg'
 import './style.css'
 
  export const Explorer = () => {
@@ -23,7 +24,7 @@ import './style.css'
                 <img className="avatar" src={avatar} alt="four people" />
                 <img className="white-dote" src={whiteDote} alt="white dot" />
                 <p className="subtitle-online">400k people online</p>
-                <img className="ellipse-left" src="./assets/icon/ellipse-left.svg" alt=""></img>
+                <img className="ellipse-left" src={ellipseLeft} alt=""></img>
               </div>
             </div>
           </div>

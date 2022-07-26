@@ -3,21 +3,22 @@ import vector2 from "../../assets/img/vector2.svg";
 import { AddingCard } from "../AddingCard/AddingCard.jsx";
 import "./style.css";
 
-
-
-export const UserMenu = ({ clickAvatar, clickCardManagement }) => {
+export const UserMenu = ({ closeAvatar, clickCardManagement, onClick }) => {
   const [openAddingCard, setOpenAddingCard] = useState(false);
-  const [qwerty, setQwerty] = useState();
-  const qwe = () => {
-    setQwerty(qwerty.push({ asdfsd: 2 }));
-    console.log(qwerty)
-  };
   const cclickCardManagement = () => {
-    setOpenAddingCard(!openAddingCard);
+    setOpenAddingCard(true);
+  };
+  const closeAddCards = (e) => {
+    e.preventDefault();
+    setOpenAddingCard(false);
   };
 
-  const wwwwww = openAddingCard ? (
-    <AddingCard clickCardManagement={clickCardManagement} />
+  const open = openAddingCard ? (
+    <AddingCard
+      clickCardManagement={clickCardManagement}
+      closeAddCards={closeAddCards}
+      onClick={onClick}
+    />
   ) : (
     false
   );
@@ -30,7 +31,7 @@ export const UserMenu = ({ clickAvatar, clickCardManagement }) => {
           className="user-menu-vector-registered"
           src={vector2}
           alt=""
-          onClick={clickAvatar}
+          onClick={closeAvatar}
         ></img>
       </div>
       <ul className="menu-registered">
@@ -40,8 +41,8 @@ export const UserMenu = ({ clickAvatar, clickCardManagement }) => {
         </li>
         <li className="menu-item-registered">Log out</li>
       </ul>
-      <button onClick={qwe}>qqqqqqqqqqqqq</button>
-      {wwwwww}
+
+      {open}
     </div>
   );
 };

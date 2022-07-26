@@ -8,9 +8,7 @@ export const Footer = () => {
         <footer className="footer">
         <div className="footer-info">
           <div className="footer-head">
-            <h4 className="footer-title-explore">Explore product in
-              new way</h4>
-      <img className='title-explore' src="icon" alt="" />
+            <h4 className="footer-title-explore">Explore product in new way</h4>
             <p className="footer-text">We specialize in creating visual identities for products and branda in your
               company.
             </p>
